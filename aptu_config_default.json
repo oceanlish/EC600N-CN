@@ -1,0 +1,64 @@
+{
+    "UART":{
+        "No":2,
+        "baudRate":9600,
+        "startBitsLen":1,
+        "dataBitsLen":8,
+        "parity":"None",
+        "stopBitsLen":1,
+        "flowCtrl":"disable",
+        "significantBit":"least"
+    },
+    
+    "Network":{
+        "timeWaitForOK":30
+    },
+    
+    "Server":[
+        {
+            "protocol":"MQTT",
+            "domain":"mqtt.zxin-iot.com",
+            "port":1883,
+            "deviceInfo":{
+                "productSecret": null,
+                "productKey": "ZXIN-GC610E",
+                "deviceName": "sdtu_2100_jiangxi",
+                "deviceSecret": "bcf381d4ae1747ae2152762ccac3b110"
+            },
+            "topic":{
+                "publish":"/a1CzNqYJF0P/kfb_demo/user/p_date",
+                "subscribe":"/a1CzNqYJF0P/kfb_demo/user/s_date"
+            },
+            "parameters": {
+                "clean_session": true,
+                "keepAlive": 300,
+                "reConnect": true
+            },
+            "qos": {
+                "publish": 0,
+                "subscribe": 0
+            }
+        }
+    ],
+
+    "Transaction":{
+        "serverProtocol": "MQTT"
+    },
+    
+    "DeviceInfo":{
+        "host": "http://banzhuan.witt.wang:8889",
+        "moduleType":"EC600S-ZXIN",
+        "deviceId":"02",
+        "UID":"305",
+        "PK":"2bb2a48bd30b6a525a30bc64d8b3d8e0",
+        "overflowLimit": 400,
+        "overflowNumber": 4,
+        "checkTime": 2,
+        "checkUpdataTime": 5
+    },
+    
+    "OTA":{
+        "autoUpgrade": false,
+        "checkTime": 900
+    }
+}

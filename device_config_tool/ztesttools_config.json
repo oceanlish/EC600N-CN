@@ -1,0 +1,5 @@
+{
+    "com": "COM10",
+	"baud": 9600,
+    "device_id": "FFFFFFFF"
+}

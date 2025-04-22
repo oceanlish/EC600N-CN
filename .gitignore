@@ -1,0 +1,3 @@
+device_config_tool/build
+device_config_tool/__pycache__
+device_config_tool/sdtu2000_configuration_lite.spec
